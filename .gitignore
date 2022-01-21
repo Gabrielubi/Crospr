@@ -1,0 +1,7 @@
+*.png
+*.jpg
+*config.json
+*collector
+/node_modules
+
+

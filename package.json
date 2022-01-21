@@ -1,0 +1,25 @@
+{
+  "name": "crospr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/builders": "0.6.0",
+    "@discordjs/rest": "0.1.0-canary.0",
+    "discord-api-types": "0.23.1",
+    "discord.js": "13.1.0",
+    "node-fetch": "3.1.1",
+    "twit": "2.2.11",
+    "ya-disk": "4.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.13"
+  }
+}
