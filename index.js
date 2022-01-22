@@ -1,7 +1,6 @@
-const { Client, Intents} = require('discord.js'); // discordjs classes
-const fs = require('fs'); // Stands for FileSystem interactions
+const { Client, Intents} = require('discord.js');
+const fs = require('fs'); 
 const { token } = require('./config.json');
-
 // Bot instance. FLAGS.GUILDS for setup, FLAGS.GUILD_MESSAGES for the listener
 const bot = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
@@ -17,4 +16,3 @@ for (const file of eventFiles) {
 		bot.on(event.name, (...args) => event.execute(...args));
 	}
 }
-

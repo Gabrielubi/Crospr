@@ -5,19 +5,21 @@ module.exports = {
     name: 'messageCreate',
     execute(msg) {
         if (msg.content === "c!test") {
-            console.log("Test completed");
-            msg.reply("que onda pa");
+            console.log("Test");
+            msg.reply("Test");
         }
-        if (msg.attachments.first()) {
-            robarAttachment(msg.attachments.first().url);
-        };
-    },
-}
 
-function robarAttachment(url) {
-    var timestamp = Math.floor(new Date().getTime()/1000);
-    request.get(url)
-        .on('error', console.error)
-        .pipe(fs.createWriteStream("images/collateral/" + timestamp + '.png'))
-    console.log("Robacion completada")
-}
+        if (msg.attachments.first()) {
+            catchAttachment(msg.attachments.first().url);
+        };
+    }
+},
+
+
+    function catchAttachment(url) {
+        var timestamp = Math.floor(new Date().getTime() / 1000);
+        request.get(url)
+            .on('error', console.error)
+            .pipe(fs.createWriteStream("images/collateral/" + timestamp + '.png'))
+        console.log("I've got something from the server")
+    }

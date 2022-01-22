@@ -1,8 +1,9 @@
+const { DISCORD_CHANNEL_ID } = require ('../config.json')
 module.exports = {
 	name: 'ready',
-	once: true,
+	once: false,
 	execute(bot) {
 		console.log(`\n${bot.user.tag} online\n------------------------` );
-        bot.user.setPresence({ activities: [{ name: 'D10S es de Argentinos y de Bokita papá' }], status: 'asd' });
-	},
+        bot.user.setPresence({ activities: [{ name: 'Under development' }], status: 'Disconnected' });
+	},	
 };
