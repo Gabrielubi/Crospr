@@ -16,15 +16,9 @@ module.exports = {
             strictSSL: true,
         });
 
-        //imagen 1459754937450057731    type photo
-        //gif  1454225217539223560      type animated_gif
-        //vidio 1483352525738708992     type video
-
         //  follow:[] can be an array of users ID.
         let stream = T.stream('statuses/filter', { follow: [TWITTER_USER_ID], tweet_mode: 'extended' })
         const dest = DISCORD_CHANNEL_ID;
-
-
 
         try {
             stream.on('tweet', function (tweet) {
