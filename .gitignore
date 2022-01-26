@@ -1,7 +1,7 @@
 *.png
 *.jpg
+*.mp4
 *config.json
 *collector
 /node_modules
-
-
+*.gif
