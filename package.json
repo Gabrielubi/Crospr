@@ -17,6 +17,7 @@
     "discord.js": "13.1.0",
     "node-fetch": "3.1.1",
     "twit": "2.2.11",
+    "twitter-api-v2": "^1.12.3",
     "ya-disk": "4.0.1"
   },
   "devDependencies": {
